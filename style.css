@@ -78,8 +78,45 @@ nav {
     justify-content: start;
     width: 100%;
     background-color: #fff;
+    overflow-y: auto;
 }
 
+.search-phrase ul{
+padding: 20px;
+margin-top: -20px;
+background-color: #f6f6f5;
+
+} 
+.search-phrase ul li{
+    list-style: none;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+}
+.search-phrase ul li img{
+    max-width: 130px;
+    margin-right:15px;
+    border-radius: 4px;
+}
+.search-phrase ul li button{
+    border: none;
+    background: #ddd;
+    color: #222;
+    padding: 6px 22px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}.search-phrase ul li button:hover{
+    background: #0088ffb4;
+    color: #fff;
+}
 .search-container {
     position: relative;
     cursor: pointer;
@@ -472,6 +509,9 @@ select {
     .search-phrase {
         height: fit-content;
     }
+    .search-phrase ul{
+        margin-top: 20px;
+    }
 
     .search input {
         width: 300px;
@@ -539,6 +579,10 @@ select {
         height: 30px;
         z-index: 10;
         transition: all .3s ease;
+    }
+    .search-phrase ul li button{
+        font-size: 14px;
+        
     }
 
     .hamburger-line {
