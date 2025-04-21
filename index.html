@@ -2,196 +2,275 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAJ - Music Discovery, Charts & Song Lyrics </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/omnes-2" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>            
 </head>
 <body>
-    <div id="nav">
-        <div id=""><h class="">GLIMT</h></div>
-        <ul id="menu">
-            <li><a>TRENDING</a></li>
-            <li><a>CONCERTS</a></li>
-            <li><a>CHARTS</a></li>
-            <li><a>HELP</a></li>
-        
-        </ul>
-        <div id="sign"><button>SIGN IN</button></div>
+    <header>
+        <nav>
+            <a href="#" class="home-link">Taj.</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span class="hamburger-line"></span>
+               <span class="hamburger-line"></span>
+               <span class="hamburger-line"></span>
+            </label>
+            
 
-    </div>
-
-
-    <div>
-       <div id="left"><h>Any image relating to the reference image</h></div>
-           <div id="right">
-                   <h id="text1">Name Songs in seconds</h>
-                   <div id="text2"><h>Find music, concerts and more with Glimt</h></div>
-                   <input type="text" name="search" placeholder="Enter lyrics">
+            <ul class="menu">
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Concerts</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><button>Sign In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-lyrics">
+            <div class="search">
+                <h2>Name songs in seconds</h2>
+                <p>Find music, concerts and more with TAJ.</p>
+             <label for="searching">
+                <div class="search-container">
+                    <input type="search" id="music-search" placeholder="Search..." class="js-input">
+                <svg xmlns="http://www.w3.org/2000/svg" class="js-search-icon"
+                width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                </div>
+             </label>
             </div>
+            <div class="search-phrase js-result">
+                <img src="image/490989071_1086558596846762_1766860759656454543_n.jpg" alt="" width="200px" height="200px">
+                <h1>Search for lyrics and they'll appear here</h1>
+                <p id="lyrics-display"></p>
+            
+            </div>
+        </section>
+
+        <section class="card-page">
+            <div class="card">
+                <h1>TAJ <br> Fast Forward</h1>
+                <h2>2025</h2>
+                <p>TAJ's predictions for breakthrough artists this year</p>
+                <a href="#">See the list</a>
+            </div>
+        </section>
+
+        <section class="chart">
+            <div class="chart-box">
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>1</h1>
+                       <div class="box-music">
+                        <img src="image/bout.jpeg" alt="rema" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Bout U</h3>
+                        <p>Rema</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>2</h1>
+                       <div class="box-music">
+                        <img src="image/why.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Why Love</h3>
+                        <p>Asake</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>3</h1>
+                       <div class="box-music">
+                        <img src="image/get.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Get Better</h3>
+                        <p>Zlatan & Fola</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>4</h1>
+                       <div class="box-music">
+                        <img src="image/laho.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Laho</h3>
+                        <p>Shallipopi</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>5</h1>
+                       <div class="box-music">
+                        <img src="image/1400x1400bb.webp" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>My Darling</h3>
+                        <p>Chella</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>6</h1>
+                       <div class="box-music">
+                        <img src="image/legolas.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Legolas</h3>
+                        <p>Odumodublvck</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>7</h1>
+                       <div class="box-music">
+                         <img src="image/ptb.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Pity This Boy</h3>
+                        <p>Odumodublvck & Victony</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>8</h1>
+                       <div class="box-music">
+                        <img src="image/bella.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Dangbana Riddim</h3>
+                        <p>Bella Shmurda & Fola</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>9</h1>
+                       <div class="box-music">
+                        <img src="image/arike.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Arike</h3>
+                        <p>Kunmie</p>
+                       </div> 
+                    </div> 
+                </div>
+                <div class="trending">
+                    <div class="song-box">
+                       <h1>10</h1>
+                       <div class="box-music">
+                        <img src="image/seyi.jpeg" alt="" width="60px" height="60px">
+                       </div>
+                       <div class="song-title">
+                        <h3>Shaolin</h3>
+                        <p>Seyi Vibez</p>
+                       </div> 
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
-    </div>
+<footer>
+    <div class="glimt-logo">
+        <h3>TAJ.</h3>
 
-<div>
- <div id="left-pic"></div>
-    <div id="left-text">
-       <div id="glimt"><h>Glimt</h></div>
-        <div id="fast"><h>Fast Forward</h></div>
-        <div id="year"><h>2025</h></div>
-        <div id="artist-cat"><h>Glimt's predictions for breakthrough artists this year</h></div>
-        <div id="list"><h>SEE THE LIST</h></div>
-    </div>
-
-    <div id="right-pic"></div>
-
-</div>
-
-<ul id="genre">
-  <li id="pic1">
-    <div id="box1">
-        <div id="no1"><h>1</h></div>
-        <div class="pic1"></div>
-        <div class="song_title1"><h>Anxiety</h></div>
-        <div class="artist1"><h>Doechii</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic2">
-    <div id="box2">
-        <div id="no2"><h>2</h></div>
-        <div class="pic2"></div>
-        <div class="song_title2"><h>Soso</h></div>
-        <div class="artist2"><h>Omah lay</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic3">
-    <div id="box3">
-        <div id="no3"><h>3</h></div>
-        <div class="pic3"></div>
-        <div class="song_title3"><h>ywh</h></div>
-        <div class="artist3"><h>Dunsin</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic4">
-    <div id="box4">
-        <div id="no4"><h>4</h></div>
-        <div class="pic4"></div>
-        <div class="song_title4"><h>if</h></div>
-        <div class="artist4"><h>Davido</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic5">
-    <div id="box5">
-        <div id="no5"><h>5</h></div>
-        <div class="pic5"></div>
-        <div class="song_title5"><h>Emotion</h></div>
-        <div class="artist5"><h>Wizkid</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic6">
-    <div id="box6">
-        <div id="no6"><h></h></div>
-        <div class="pic6"></div>
-        <div class="song_title6"><h>Lonely</h></div>
-        <div class="artist6"><h>Akon</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic7">
-    <div id="box7">
-        <div id="no7"><h>1</h></div>
-        <div class="pic7"></div>
-        <div class="song_title7"><h>2055</h></div>
-        <div class="artist7"><h>Sleepy hallow</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic8">
-    <div id="box8">
-        <div id="no8"><h>8</h></div>
-        <div class="pic8"></div>
-        <div class="song_title8"><h>Anxiety</h></div>
-        <div class="artist8"><h>Sleepy hallow</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic9">
-    <div id="box9">
-        <div id="no9"><h>1</h></div>
-        <div class="pic9"></div>
-        <div class="song_title9"><h>Dear God</h></div>
-        <div class="artist9"><h>Dax</h></div>
-
-    </div>
-  </li>
-
-  <li id="pic10">
-    <div id="box10">
-        <div id="no10"><h>10</h></div>
-        <div class="pic10"></div>
-        <div class="song_title10"><h>Joy</h></div>
-        <div class="artist10"><h>Wizkid</h></div>
-
-    </div>
-  </li>
- 
-
-</ul>
-
-
-<ul>
-    <li id="holder">
-        <div id="image"></div>
-        <div id="image-text">
-            <h id="chella">CHELLA</h>
-            <h id="my">MY</h>
-            <h id="darling">DARLING</h>
+        <div class="language">
+            <h3>Select language</h3>
+            <select  id="languages">
+                <option>English (US)</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>Portugese</option>
+                <option>India</option>
+                <option>Chinese</option>
+                <option>Yoruba</option>
+            </select>
         </div>
-    
-    </li>
 
-    <li id="holder2">
-      <div id="image2"></div>
-      <div id="image-text2">
-          <h id="chella2">CHELLA</h>
-          <h id="my2">MY</h>
-          <h id="darling2">DARLING</h>
-      </div>
-  
-  </li>
-
-  <li id="holder3">
-    <div id="image3"></div>
-    <div id="image-text3">
-        <h id="chella3">CHELLA</h>
-        <h id="my3">MY</h>
-        <h id="darling3">DARLING</h>
+        <div class="store-box">
+            <div class="store">
+                <img src="image/play-store.png" alt="" width="30px" height="30px">
+                <div class="text">
+                    <h4>Get it on</h4>
+                    <p>Google Play</p>
+                </div>
+            </div>
+            <div class="store">
+                <img src="image/apple.png" alt="" width="30px" height="30px">
+                <div class="text">
+                    <h4>Download on the</h4>
+                    <p>App Store</p>
+                </div>
+            </div>
+            <div class="store">
+                <img src="image/Google_Chrome_Web_Store_icon_2022.svg.png" alt="" width="30px" height="30px">
+                <div class="text">
+                    <h4>Available on the</h4>
+                    <p>Chrome Web Store</p>
+                </div>
+            </div>
+            <div class="store">
+                <img src="image/galaxy.jpeg" alt="" width="30px" height="30px">
+                <div class="text">
+                    <h4>Available on </h4>
+                    <p>Galaxy Store</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-</li>
+    <div class="company">
+        <p>Company</p>
+        <a href="#">About Us</a>
+        <a href="#">Apps</a>
+        <a href="#">Careers</a>
+        <a href="#">Help for Apple Devices</a>
+        <a href="#">Help for Android Devices</a>
+        <a href="#">TAJKit For Developers</a>
+    </div>
 
-<li id="holder4">
-  <div id="image4"></div>
-  <div id="image-text4">
-      <h id="chella4">CHELLA</h>
-      <h id="my4">MY</h>
-      <h id="darling4">DARLING</h>
-  </div>
+    <div class="legal">
+        <p>Legal</p>
+        <a href="#">Terms</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Manage Your Data</a>
+        <a href="#">My Library</a>
+    </div>
 
-</li>
-</ul>
-
+    <div class="social">
+        <div class="social-logo">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M12.166 3c.796 0 3.495.223 4.769 3.073.426.959.324 2.589.24 3.898l-.002.047c-.011.146-.018.278-.024.41a.62.62 0 0 0 .322.072c.241-.013.53-.096.831-.241a.81.81 0 0 1 .373-.084c.146 0 .289.023.409.072.361.12.59.385.59.674.013.361-.313.675-.975.939-.071.023-.169.061-.276.096-.363.109-.917.289-1.073.651-.072.181-.049.421.098.697l.012.013c.048.109 1.228 2.795 3.854 3.229a.401.401 0 0 1 .337.409c0 .06-.013.119-.036.181-.193.457-1.023.795-2.53 1.021-.047.073-.096.302-.132.459-.022.144-.06.289-.107.444-.061.218-.217.325-.446.325h-.024a2.45 2.45 0 0 1-.433-.059 4.799 4.799 0 0 0-1.024-.108c-.24 0-.48.012-.732.06-.483.084-.904.373-1.386.71-.687.481-1.469 1.036-2.649 1.036-.048 0-.096-.012-.146-.012h-.119c-1.181 0-1.951-.543-2.637-1.036-.481-.338-.89-.626-1.373-.711a5.507 5.507 0 0 0-.745-.06c-.435 0-.771.072-1.023.12-.17.035-.314.059-.435.059a.45.45 0 0 1-.47-.337c-.048-.154-.071-.313-.107-.456-.038-.146-.085-.396-.133-.458-1.543-.179-2.373-.517-2.565-.986a.473.473 0 0 1-.044-.181.398.398 0 0 1 .337-.409c2.625-.434 3.805-3.119 3.854-3.232l.013-.023c.145-.277.18-.52.096-.699-.156-.349-.711-.529-1.07-.65a1.759 1.759 0 0 1-.279-.096c-.89-.35-1.011-.748-.962-1.024.072-.384.541-.637.939-.637.117 0 .217.023.308.06.337.155.635.241.888.241a.742.742 0 0 0 .373-.085l-.041-.458c-.08-1.307-.182-2.935.247-3.889 1.236-2.836 3.929-3.054 4.724-3.054L12.117 3h.049z"></path></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
