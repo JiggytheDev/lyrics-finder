@@ -101,7 +101,7 @@ background-color: #f6f6f5;
     margin-right:15px;
     border-radius: 4px;
 }
-.search-phrase ul li button, .back-to-search{
+.search-phrase ul li button{
     border: none;
     background: #ddd;
     color: #222;
@@ -112,9 +112,8 @@ background-color: #f6f6f5;
     text-transform: uppercase;
     margin-top: 5px;
     font-weight: 400;
-    cursor: pointer;
     letter-spacing: 0.2px;
-}.search-phrase ul li button:hover, .back-to-search:hover {
+}.search-phrase ul li button:hover{
     background: #0088ffb4;
     color: #fff;
 }
@@ -133,7 +132,6 @@ background-color: #f6f6f5;
     font-size: 4rem;
     font-weight: bold;
     color: #fff;
-    text-align: center;
 }
 
 .search p {
@@ -142,9 +140,9 @@ background-color: #f6f6f5;
 }
 
 .search {
-    width: 100%;
+    width: 100;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
     padding: .4rem .7rem;
@@ -510,10 +508,6 @@ select {
 
     .search-phrase {
         height: fit-content;
-
-    }
-    .search-phrase h1{
-        text-align: center;
     }
     .search-phrase ul{
         margin-top: 20px;
@@ -522,21 +516,10 @@ select {
     .search input {
         width: 300px;
     }
-    .search h2 {
-        text-align: center;
-    }
-    
-    .search p {
-        text-align: center;
-    }
-    
 
     .card {
         height: fit-content;
         width: 100%;
-    }
-    .card-page{
-        height: 40vh;
     }
 
     .chart-box {
@@ -599,10 +582,7 @@ select {
     }
     .search-phrase ul li button{
         font-size: 14px;
-
-    }
-    .search-phrase h1{
-        text-align: center;
+        
     }
 
     .hamburger-line {
@@ -701,9 +681,7 @@ select {
 
     footer {
         gap: 1rem;
-    
     }
-
 }
   
 
