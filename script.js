@@ -6,7 +6,7 @@ const apiURL = `https://genius-song-lyrics1.p.rapidapi.com/search/?q=`
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '03e776fdd6msh8a86196d8443ddbp142295jsna4c1f2e10666',
+		'x-rapidapi-key': '57cf677ff8msh1bd873a576983dbp1656fejsn6cfb04b7142f',
 		'x-rapidapi-host': 'genius-song-lyrics1.p.rapidapi.com'
 	}
 };
@@ -100,7 +100,7 @@ async function  fetchLyrics(artist, title) {
             result.innerHTML=`
             <h3>Lyrics for "${title}" by ${artist}</h3>
             <pre style="white-space: pre-wrap;">${data.lyrics}</pre>
-            <button onclick="clearResults()">Back to Search</button>
+            <button onclick="clearResults()" class="back-to-search">Back to Search</button>
             `;
         }else{
             result.innerHTML= '<p>Lyrics not found.</p>';
