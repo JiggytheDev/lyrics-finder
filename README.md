@@ -1,6 +1,6 @@
 # Lyrics Finder Web App
 
-A simple web application to search and display song lyrics using the [Lyrics.ovh API] (http://lyrics.ovh)
+A simple web application to search and display song lyrics using the [Lyrics.ovh API] (http://lyrics.ovh) and [Rapid API] (https://genius-song-lyrics1.p.rapidapi.com)
 
 ## Features 
 - Search lyrics by **song title and artist name**.
@@ -10,7 +10,7 @@ A simple web application to search and display song lyrics using the [Lyrics.ovh
 
 ## Techologies Used
 - **Frontend**: HTML5, CSS3, Javascript
-- **API**: [Lyrics.ovh API] (http://lyrics.ovh) (free lyrics API)
+- **API**: [Lyrics.ovh API] (http://lyrics.ovh) (free lyrics API), [Rapid API] (https://genius-song-lyrics1.p.rapidapi.com)
 - **Deployment**: Github Pages.
 
 ## How to Use
