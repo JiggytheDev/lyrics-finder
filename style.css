@@ -82,9 +82,9 @@ nav {
 }
 
 .search-phrase ul{
-padding: 20px;
-margin-top: -20px;
-background-color: #f6f6f5;
+    padding: 20px;
+    margin-top: -20px;
+    background-color: #f6f6f5;
 
 } 
 .search-phrase ul li{
@@ -113,10 +113,13 @@ background-color: #f6f6f5;
     margin-top: 5px;
     font-weight: 400;
     letter-spacing: 0.2px;
-}.search-phrase ul li button:hover, .back-to-search:hover{
+}
+
+.search-phrase ul li button:hover, .back-to-search:hover{
     background: #0088ffb4;
     color: #fff;
 }
+
 .search-container {
     position: relative;
     cursor: pointer;
@@ -132,7 +135,6 @@ background-color: #f6f6f5;
     font-size: 4rem;
     font-weight: bold;
     color: #fff;
-    line-height: 1.35;
 }
 
 .search p {
