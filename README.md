@@ -23,4 +23,5 @@ A simple web application to search and display song lyrics using the [Lyrics.ovh
    - If lyrics aren't found, an error message will appear.
   
 ## Live Demo
+(https://jiggythedev.github.io/lyrics-finder/)
      
